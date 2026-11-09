@@ -1,10 +1,10 @@
 # BOLDINK DESIGNS - Apache config (use if your host runs Apache / cPanel)
 RewriteEngine On
 
-# 1) Force HTTPS and non-www in a single redirect
+# 1) Force HTTPS and www in a single redirect
 RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^ https://boldinkdesigns.online%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\.boldinkdesigns\.online$ [NC]
+RewriteRule ^ https://www.boldinkdesigns.online%{REQUEST_URI} [L,R=301]
 
 # 2) Custom 404 page (keeps a real 404 status code)
 ErrorDocument 404 /404.html
