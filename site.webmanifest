@@ -1,0 +1,20 @@
+{
+ "name": "BOLDINK DESIGNS",
+ "short_name": "BOLDINK",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#070d1f",
+ "theme_color": "#070d1f",
+ "icons": [
+  {
+   "src": "/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/img/boldink-designs-logo-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}
